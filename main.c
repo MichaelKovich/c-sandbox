@@ -12,6 +12,14 @@ int main()
   double jason2 = 55.55555e+11;
   _Bool boolVariable = 1;
 
+  int arrayOfNumbers[5] = {10, 20, 30, 40, 50};
+
+  int matrix[4][5] = {
+      {10, 5, -3},
+      {9, 0, 0},
+      {32, 20, 1},
+      {0, 0, 8}};
+
   printf("Please enter two values: ");
   scanf("%s %d", str, &i);
   printf("\nYou entered: %s %d\n", str, i);
