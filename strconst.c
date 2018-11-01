@@ -1,10 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
-#define TAXRATE 0.015
-#define INSTRUCTIONS "Please enter a value."
+// #define TAXRATE 0.015
+// #define INSTRUCTIONS "Please enter a value."
 
 #include <stdio.h>
+
+int isalpha(int c);
+int isdigit(int c);
+int ispunct(int c);
 
 int charCount(const char sampleString[])
 {
@@ -18,9 +22,9 @@ int charCount(const char sampleString[])
 
 int main(void)
 {
-  char str[] = "Hello";
-  const int MONTHS = 12;
-  const char message[] = "Here's a message.";
+  // char str[] = "Hello";
+  // const int MONTHS = 12;
+  // const char message[] = "Here's a message.";
 
   // printf("%s %f %s %d", str, TAXRATE, INSTRUCTIONS, MONTHS);
 
@@ -29,7 +33,7 @@ int main(void)
 
   strncpy(temp, myString, sizeof(temp) - 1);
 
-  printf("The length is: %d\n", strlen(myString));
+  printf("The length is: %d\n", (int)strlen(myString));
   printf("The string is: %s\n", temp);
 
   char src[50], dest[50];
@@ -45,7 +49,7 @@ int main(void)
   int nDigits = 0;  // Number of digits in input
   int nPunct = 0;   // Number of punctuation characters in input
 
-  printf("Enter an interesting string of less than %d characters:\n", 100);
+  printf("\nEnter an interesting string of less than %d characters:\n", 100);
   scanf("%s", buf); // Read a string into the buffer.
 
   int i = 0; // Buffer index
